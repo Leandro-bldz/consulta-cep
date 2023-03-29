@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(60, 60, 60);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+label, h1, p {
+  color: yellow;
+}
+
+form {
+  border: 1px solid yellow;
+  padding: 3px;
+  max-width: 50%;
+}
+
+input {
+  background-color: rgb(60, 60, 60);
+  color: yellow;
+}

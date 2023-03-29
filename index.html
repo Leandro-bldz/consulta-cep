@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de CEP</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <h1>Consulta de CEP</h1>
+  <p>Digite um CEP válido para consultar as informações (somente números)</p>
+  <form method="get" action=".">
+    <label for="">CEP: </label><br>
+    <input name="cep" id="cep" size="10" maxlength="9" type="text" onblur="pesquisacep(this.value);"><br>
+    <label for="">Rua: </label><br>
+    <input name="rua" id="rua" size="60" type="text"><br>
+    <label for="">Bairro: </label><br>
+    <input name="bairro" id="bairro" size="40"type="text"><br>
+    <label for="">Cidade: </label><br>
+    <input name="cidade" id="cidade" size="40"type="text"><br>
+    <label for="">Estado: </label><br>
+    <input name="uf" id="uf" size="2" type="text"><br>
+    <label for="">IBGE: </label><br>
+    <input name="ibge" id="ibge" size="8" type="text">
+    <br><br>
+    <input type="button" class="botao" value="Buscar" onclick="pesquisacep(valor)">
+    <input type="reset" class="botao" value="Limpar">
+  </form>
+
+  <script src="consulta.js"></script>
+</body>
+
+</html>
